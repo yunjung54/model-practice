@@ -1,0 +1,14 @@
+<h1>!helloworld!</h1>
+
+{{key_posts}}
+<hr>
+
+{% for post in key_posts %}
+<!-- 여기서는 all을 가로를 안써 옆에 -->
+  제목 : {{post.title}}
+ <br> 
+ 날짜 : {{post.pub_date}}
+ <br>
+ 내용 : {{post.body}}
+ <hr>
+{% endfor %}
